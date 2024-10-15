@@ -3,6 +3,8 @@ import allure
 import pytest
 
 
+@allure.title("Verify Title")
+@pytest.mark.positive
 def test_verify_title():
     driver = webdriver.Chrome()
     driver.get("https://katalon-demo-cura.herokuapp.com")
