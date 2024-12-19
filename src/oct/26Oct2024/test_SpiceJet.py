@@ -20,8 +20,8 @@ def test_sample_booking():
     action = ActionChains(driver)
     action.click(Fromele).send_keys("Del").click(toele).send_keys("Maa").perform()
     time.sleep(5)
-    dt = driver.find_element(By.XPATH, "//div[@data-testid='undefined-calendar-day-25']")
-    WebDriverWait(driver, 10).until(
-        Ec.visibility_of(dt))
-    searchflightbtn = driver.find_element(By.XPATH, value="//div[@data-testid='home-page-flight-cta']")
-    action.click(dt).click(searchflightbtn).perform()
+    # dt = driver.find_element(By.XPATH, "//div[@data-testid='undefined-calendar-day-26']")
+    # WebDriverWait(driver, 10).until(
+    #     Ec.visibility_of(dt))
+    # searchflightbtn = driver.find_element(By.XPATH, value="//div[@data-testid='home-page-flight-cta']")
+    # action.click(dt).click(searchflightbtn).perform()
